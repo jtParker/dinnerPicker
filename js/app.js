@@ -1,1 +1,1 @@
-angular.module('dinnerPicker', []);
+var app = angular.module('dinnerPicker', []);
