@@ -11,15 +11,27 @@
   <body ng-controller="mainCtrl">
     <div class="container">
       <div class="col-xs-12 col-center">
-        <h1 class="text-center">Dinner Picker!</h1>
-        <div class="options">
-          {{ test }}
+        <div class="header">
+          <h1 class="text-center">Dinner Picker!</h1>
         </div>
-        <div class="display">
+        <div class="col-md-6 col-xs-12 location">
+          <h4>Where?:</h4>
+          <input type="text" name="" value="Zip Code">
+        </div>
+        <div class="col-md-6 col-xs-12 options">
+          <h4>Level of indecisiveness:</h4>
+          <p>Price Level:</p>
+          <input type="radio" name="" value="1">
+          <input type="radio" name="" value="2">
+          <input type="radio" name="" value="3">
+          <input type="radio" name="" value="4">
+        </div>
+        <div class="col-md-6 col-xs-12 display">
+          <h2>{{ yourDinner.name }}</h2>
           <div id="map"></div>
         </div>
         <div class="button">
-          <button name="button" class="btn-primary">Pick My Dinner!</button>
+          <button name="button" class="btn-primary" ng-click="pickDinner()">Pick My Dinner!</button>
         </div>
       </div>
     </div>
