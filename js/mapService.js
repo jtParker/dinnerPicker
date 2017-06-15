@@ -1,13 +1,13 @@
 app.service('mapService', ['$q', function($q) {
 
-  this.initMap = function() {
-      var initPlace = new google.maps.LatLng(41.8781, 87.6298);
-
-      this.map = new google.maps.Map(document.getElementById('map'), {
-        center: initPlace,
-        zoom: 200
-      });
-  };
+  // this.initMap = function() {
+  //     var initPlace = new google.maps.LatLng(41.8781, 87.6298);
+  //
+  //     this.map = new google.maps.Map(document.getElementById('map'), {
+  //       center: initPlace,
+  //       zoom: 200
+  //     });
+  // };
 
   this.findEats = function(find) {
     var d = $q.defer();

@@ -20,6 +20,6 @@ app.controller('mainCtrl', ['$scope', 'mapService', function($scope, mapService)
     .catch(console.error);
   };
 
-  mapService.initMap();
+  // mapService.initMap();
 
 }]);
